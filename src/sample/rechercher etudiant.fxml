@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" styleClass="root" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.appController">
+   <children>
+      <JFXTabPane layoutX="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0">
+         <tabs>
+            <Tab text="Rechercher avec Matricule        ">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXTextField fx:id="matr" layoutX="333.0" layoutY="85.0" />
+                        <Label layoutX="237.0" layoutY="103.0" text="Matricule">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="106.0" layoutY="33.0" text="Entere le matricule de letudiant">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                        <JFXButton layoutX="473.0" layoutY="398.0" onAction="#rechercheEtudiantMat" text="Rechercher">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="25.0" layoutY="398.0" text="Retour">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXTextArea fx:id="textarea" layoutX="50.0" layoutY="191.0" style="-fx-background-color: E0FFFF;" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Rechercher avec autre informtions">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="106.0" layoutY="14.0" text="Entere les informations suivante" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font></Label>
+                        <Label layoutX="35.0" layoutY="71.0" text="Nom" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font></Label>
+                        <Label layoutX="215.0" layoutY="71.0" text="Prenom" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="427.0" layoutY="71.0" text="Date de naicance" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="nr" focusColor="WHITE" layoutX="5.0" layoutY="116.0" unFocusColor="#323232" />
+                        <JFXTextField fx:id="prer" layoutX="202.0" layoutY="116.0" />
+                        <JFXDatePicker fx:id="dnr" layoutX="389.0" layoutY="116.0" />
+                        <JFXButton layoutX="495.0" layoutY="416.0" onAction="#rechercherEtudiantNPD" text="Rechercher">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="14.0" layoutY="416.0" text="Retour">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXTextArea fx:id="textarea2" layoutX="73.0" layoutY="177.0" prefHeight="201.0" prefWidth="466.0" style="-fx-background-color: E0FFFF;" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</AnchorPane>

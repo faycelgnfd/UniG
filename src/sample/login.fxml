@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.86" prefHeight="500.0" prefWidth="600.0" styleClass="root" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.appController">
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <Label layoutX="30.0" layoutY="109.0" prefHeight="42.0" prefWidth="86.0" text="UniG" textFill="#000203">
+      <font>
+         <Font name="DejaVu Serif Bold" size="26.0" />
+      </font>
+   </Label>
+   <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="30.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@89037.jpg" />
+      </image>
+   </ImageView>
+   <JFXButton buttonType="RAISED" layoutX="234.0" layoutY="380.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#Login" onKeyPressed="#Login" prefHeight="35.0" prefWidth="138.0" style="-fx-background-color: #F0FFF0;" stylesheets="@style.css" text="LOGIN" />
+   <Label fx:id="LOGIN" alignment="CENTER" layoutX="231.0" layoutY="331.0" prefHeight="35.0" prefWidth="138.0" textFill="#173e4a">
+      <font>
+         <Font name="System Bold Italic" size="16.0" />
+      </font>
+   </Label>
+   <JFXPasswordField fx:id="password" labelFloat="true" layoutX="200.0" layoutY="260.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="200.0" promptText="password">
+      <font>
+         <Font name="System Italic" size="13.0" />
+      </font>
+   </JFXPasswordField>
+   <JFXTextField fx:id="user" labelFloat="true" layoutX="200.0" layoutY="185.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="200.0" promptText="username">
+      <font>
+         <Font name="System Italic" size="13.0" />
+      </font>
+   </JFXTextField>
+   <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="172.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@user2.jpg" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="174.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@icons8-unlock-26.jpg" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="250.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@login.jpg" />
+      </image>
+   </ImageView>
+</AnchorPane>
